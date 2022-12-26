@@ -171,7 +171,7 @@ const activate = (tab) => {
   if(tab === 'home'){
     homeActive.value = true;
     analyticsActive.value = false;
-    schedulesActive
+    schedulesActive.value = false;
   } else if ( tab === 'analytics') {
     homeActive.value = false;
     analyticsActive.value = true;
