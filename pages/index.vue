@@ -22,7 +22,7 @@
             </div>
         </div>
       </div>
-      <div class="mt-4 pt-4 w-full">
+      <div class="mt-4 pt-4 w-5/6">
         <div class="mt-4 flex gap-4">
           <div class="w-1/2">
             <h2 class="font-bold text-xl w-full">Activity <span class="p-2 rounded-full bg-slate-400 text-black text-xs">3</span>
@@ -37,7 +37,7 @@
               </svg>
               <input type="search" />
             </div>
-            <ActivityCard />
+            <ActivityCard :activities="5"/>
             </div>
            
           </div>
@@ -54,7 +54,7 @@
               </svg>
               <input type="search" />
             </div>
-            <CourseCard />
+            <CourseCard :courses="5" />
             </div>
            
           </div>
