@@ -1,0 +1,6 @@
+export const useHomeActive = () => useState<boolean>('active', () => true)
+export const useAnalyticsActive = () => useState<boolean>('analytics', () => false)
+export const useSchedulesActive = () => useState<boolean>('analytics', () => false)
+export const useCoursesActive = () => useState<boolean>('analytics', () => false)
+export const useToolsActive = () => useState<boolean>('analytics', () => false)
+export const useSettingsActive = () => useState<boolean>('analytics', () => false)

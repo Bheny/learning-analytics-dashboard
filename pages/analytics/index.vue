@@ -1,10 +1,10 @@
 <template>
-  <div>
+  <div class="p-3">
     <div>
       <h2 class="text-2xl font-bold">Analytics</h2>
       <h3>April 30, Thursday</h3>
     </div>
-    <div class="grid grid-cols-3 gap-4 lg:w-3/5 w-full">
+    <div class="grid lg:grid-cols-3 gap-4 lg:w-3/5 w-full mt-3">
       <div class="rounded-lg border flex p-4">
         <div class="mr-3 bg-gray-800 rounded-full w-16 h-16 text-center">
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
@@ -31,7 +31,7 @@
         </div>
         <div>
           <h2 class="text-slate-400 text-xs">Points Scored</h2>
-          <h1 class="text-slate-400"><span class="text-2xl text-black font-bold">600</span></h1>
+          <h1 class="text-slate-400"><span class="text-2xl text-black font-bold">600/</span>6000</h1>
         </div>
       </div>
       <div class="rounded-lg border flex p-4">
@@ -46,7 +46,7 @@
         </div>
         <div>
           <h2 class="text-slate-400 text-xs">Your Rank</h2>
-          <h1 class="text-slate-400"><span class="text-2xl text-black font-bold">135</span></h1>
+          <h1 class="text-slate-400"><span class="text-2xl text-black font-bold">135/</span>200</h1>
         </div>
       </div>
     </div>
@@ -54,4 +54,8 @@
 </template>
   
 <script setup>
+// const analyticsActive = useHomeActive()
+// onMounted(()=>{
+//   analyticsActive.value = true
+// })
 </script>

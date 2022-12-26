@@ -1,8 +1,8 @@
 <template>
-    <div>
+    <div class="w-full">
         <div v-for="course in courses" v-bind:key="course" class="p-2 w-full flex">
             <img src="~/assets/ella.jpg" class="rounded-lg w-12 h-12 mr-4"/>
-            <div class="mr-24">
+            <div class="md:mr-24">
                 <h2 class="text-sm text-slate-600 font-bold">Introduction to Programming</h2>
                 <h3 class="text-xs text-slate-400">By Mr Asiedu </h3>
                 <div>
