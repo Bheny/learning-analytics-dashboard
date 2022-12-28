@@ -52,9 +52,9 @@
 const user = ref( {
         id:1,
         username:"0321080183",
-        firstname:"Bernard Kojo",
-        lastname: "Tay",
-        email:"bernard.tay@htu.edu.gh",
+        firstname:"Adam",
+        lastname: "Taylor",
+        email:"adam.taylor@htu.edu.gh",
         is_student:true,
         class:"Btech Computer Science 300",
       })

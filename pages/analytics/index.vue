@@ -1,5 +1,5 @@
 <template>
-  <div class="p-3">
+  <div  id="BarChart" class="p-3 pb-24">
     <div>
       <h2 class="text-2xl font-bold">Analytics</h2>
       <h3>April 30, Thursday</h3>
@@ -50,12 +50,68 @@
         </div>
       </div>
     </div>
+    <div >
+      <BarChart :chartData="barChartData" :chartOptions="barChartOptions" />
+
+      <!-- <PieChart :chartData="pieChartData" :chartOptions="pieChartOptions" /> -->
+
+   
   </div>
+  </div>
+  
 </template>
   
 <script setup>
-// const analyticsActive = useHomeActive()
-// onMounted(()=>{
-//   analyticsActive.value = true
-// })
+const barChartData = {
+        labels: [ 'January', 'February', 'March' ],
+        datasets: [ { label: 'Database',
+                  backgroundColor: '#1152d3',
+                      data: [40, 20, 12] },{ label: 'Data Analytics',
+                  backgroundColor: '#f87923',
+                      data: [20, 70, 45] } ]
+      }
+const barChartOptions = ref( {
+        responsive: true
+      })
+
+//       const pieChartData = {
+//           labels: ['VueJs', 'EmberJs', 'ReactJs', 'AngularJs'],
+//           datasets: [
+//     {
+//       backgroundColor: ['#41B883', '#E46651', '#00D8FF', '#DD1B16'],
+//       data: [40, 20, 30, 10]
+//     }
+//   ]
+// }
+// const pieChartOptions = {
+//   responsive: true,
+//   maintainAspectRatio: false
+// }
 </script>
+
+<!-- <script>
+import { Bar, Bubble } from 'vue-chartjs'
+import { Chart as ChartJS, Title, Tooltip, Legend, BarElement, CategoryScale, LinearScale } from 'chart.js'
+
+ChartJS.register(Title, Tooltip, Legend, BarElement, CategoryScale, LinearScale)
+
+export default {
+  name: 'BarChart',
+  components: { Bar, Bubble },
+  data() {
+    return {
+      chartData: {
+        labels: [ 'January', 'February', 'March' ],
+        datasets: [ { label: 'Database',
+                  backgroundColor: '#1152d3',
+                      data: [40, 20, 12] },{ label: 'Data Analytics',
+                  backgroundColor: '#f87923',
+                      data: [20, 70, 45] } ]
+      },
+      chartOptions: {
+        responsive: true
+      }
+    }
+  }
+}
+</script> -->
