@@ -5,7 +5,7 @@
         <h3 class="text-sm text-slate-800 ">Its sunny today and a good time to study</h3>
       </div>
       <div class="mt-4">
-        <h2 class="font-bold text-xl">Your Progress <span class="p-2 rounded-full bg-slate-400 text-black text-xs">10</span></h2>
+        <h2 class="font-bold text-xl">Your Progress <span class="p-2 rounded-full bg-blue-800 text-white text-xs">10</span></h2>
       </div>
       <div class="mt-4 md:flex md:gap-3">
         <!-- lessons completed card -->
@@ -36,6 +36,22 @@
                 <div class="bg-gray-400 w-1/2 h-full"></div>
               </div>
             </div>
+        </div>
+      </div>
+      <div class="mt-8 ">
+        <h2 class="font-bold text-xl md:text-2xl w-full">Recommended For You <span class="text-sm text-blue-600 underline float-right">View More</span></h2>
+        <div class="w-full mt-3  lg:flex overflow-x-scroll gap-3">
+         <div v-for="recommended in 3" @key="recommended" class="w-full mt-3 inline-block lg:w-full bg-blue-50 rounded-xl">
+           <!-- course recommendation : courses or articales are rendered based on the courses student is taking  -->
+           <div class="w-full">
+            <img src="~/assets/ella.jpg" class="rounded-xl w-full h-48 object-cover object-center" />
+          </div>
+          <div class="mt-2 p-2">
+            <h4 class="text-slate-400 text-xs">Projector | 7 min read</h4>
+            <h2 class="font-bold text-slate-900 text-lg">Understanding Databases for beginners</h2>
+          </div>
+         </div>
+
         </div>
       </div>
      <div class="mt-4 pt-4 md:w-5/6">

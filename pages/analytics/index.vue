@@ -6,7 +6,7 @@
     </div>
     <div class="grid lg:grid-cols-3 gap-4 lg:w-3/5 w-full mt-3">
       <div class="rounded-lg border flex p-4">
-        <div class="mr-3 bg-gray-800 rounded-full w-16 h-16 text-center">
+        <div class="mr-3 bg-blue-800 rounded-full w-16 h-16 text-center">
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
             stroke="currentColor" class="mx-auto text-white w-6 mt-4 h-6">
             <path stroke-linecap="round" stroke-linejoin="round"
@@ -20,7 +20,7 @@
         </div>
       </div>
       <div class="rounded-lg border flex p-4">
-        <div class="mr-3 bg-gray-800 rounded-full w-16 h-16 text-center">
+        <div class="mr-3 bg-blue-800 rounded-full w-16 h-16 text-center">
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
             stroke="currentColor" class="mx-auto text-white w-6 mt-4 h-6">
             <path stroke-linecap="round" stroke-linejoin="round"
@@ -35,7 +35,7 @@
         </div>
       </div>
       <div class="rounded-lg border flex p-4">
-        <div class="mr-3 bg-gray-800 rounded-full w-16 h-16 text-center">
+        <div class="mr-3 bg-blue-800 rounded-full w-16 h-16 text-center">
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
             stroke="currentColor" class="mx-auto text-white w-6 mt-4 h-6">
             <path stroke-linecap="round" stroke-linejoin="round"
