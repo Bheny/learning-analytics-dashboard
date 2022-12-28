@@ -1,8 +1,8 @@
 <template>
   <div class="lg:flex w-full h-full">
-<header class="hidden lg:block lg:w-2/12 text-slate-300 bg-gray-900 text-white">
+<header class="hidden lg:block lg:w-2/12 text-slate-300 bg-blue-900 text-white">
       <nav class="w-full">
-        <div class="hidden md:block w-full text-center p-3 text-bold">
+        <div class="hidden md:block w-full text-center p-4 text-bold">
           <NuxtLink to="/">Learning Analytics Dashboard</NuxtLink>
         </div>
         <ul class=" mt-10">
@@ -91,7 +91,7 @@
 
     <!-- output the page content -->
     <div class=" w-full pt-16 md:pt-10">
-      <div class="lg:hidden to-bg-gray-100 bg-gray-900 text-gray-100 rounded-t-lg lg:bg-white fixed z-30 top-0 w-full">
+      <div class="lg:hidden to-bg-gray-100 bg-blue-900 text-gray-100 rounded-t-lg lg:bg-white fixed z-30 top-0 w-full">
         <div class="float-left inline w-1/2 p-2 ">
           <h2 class="text-gray-100 font-bold">Learning Analytics Dashboard</h2>
         </div>
@@ -102,9 +102,9 @@
       <slot />
   </div>
   <!-- bottom menu bar displays only in mobile view  -->
-  <div class="lg:hidden bg-gray-900 text-gray-100 rounded-t-lg lg:bg-white fixed z-30 bottom-0 w-full">
+  <div class="lg:hidden bg-blue-900 text-gray-100 rounded-t-lg lg:bg-white fixed z-30 bottom-0 w-full">
     <ul class="grid grid-cols-6 p-3 w-full gap-auto">
-      <NuxtLink @click="activate('home')" to="/"><li :class="[ homeActive ? 'bg-white text-gray-900':'text-gray-100 bg-gray-900']" class=" rounded-lg p-3">
+      <NuxtLink @click="activate('home')" to="/"><li :class="[ homeActive ? 'bg-white text-gray-900':'text-gray-100 ']" class=" rounded-lg p-3">
       <!-- home -->
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                 stroke-width="1.5" stroke="currentColor" class="w-6 h-6 ">
@@ -112,7 +112,7 @@
                   d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
               </svg>
       </li></NuxtLink>
-      <NuxtLink @click="activate('analytics')" to="/analytics"><li :class="[ analyticsActive ? 'bg-white text-gray-900':'text-gray-100 bg-gray-900']"  class="p-3  rounded-lg">
+      <NuxtLink @click="activate('analytics')" to="/analytics"><li :class="[ analyticsActive ? 'bg-white text-gray-900':'text-gray-100 ']"  class="p-3  rounded-lg">
         <!-- statistics -->
         <svg xmlns="http://www.w3.org/2000/svg" fill="none"
                 viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6  h-6">

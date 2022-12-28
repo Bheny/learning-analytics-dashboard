@@ -1,7 +1,7 @@
 <template>
     <div class="p-3 pb-24">
       <div class="">
-        <h1 class="text-xl font-bold">Hello Adam,</h1>
+        <h1 class="text-2xl text-slate-800 font-bold">Hello Adam,</h1>
         <h3 class="text-sm text-slate-800 ">Its sunny today and a good time to study</h3>
       </div>
       <div class="mt-4">
@@ -11,14 +11,14 @@
         <!-- lessons completed card -->
         <div class="rounded-lg p-3 slate-gray-50 md:w-64 shadow-lg">
             <div class="p-2">
-              <h1 class=" font-bold"><span class="text-2xl">204/</span><span class="text-xl text-slate-400">300</span></h1>
+              <h1 class=" font-bold"><span class="text-slate-800 text-2xl">204/</span><span class="text-xl text-slate-400">300</span></h1>
               <h2 class="text-xs text-slate-400">completed Lessons</h2>
             </div>
             <div class="w-full mt-6 mb-6">
-              <span class="text-3xl font-bold">65%</span><br />
+              <span class="text-3xl text-slate-800 font-bold">65%</span><br />
               <span class="text-xs text-slate-400">completed</span><br />
               <div class="w-full border border-gray-400 bg-white h-2 rounded-full">
-                <div class="bg-gray-400 w-1/2 h-full"></div>
+                <div class="bg-blue-500 w-1/2 h-full"></div>
               </div>
             </div>
         </div>
