@@ -1,5 +1,5 @@
 <template>
-    <div class="p-3">
+    <div class="p-3 pb-24">
       <div class="">
         <h1 class="text-xl font-bold">Hello Adam,</h1>
         <h3 class="text-sm text-slate-800 ">Its sunny today and a good time to study</h3>
@@ -7,13 +7,29 @@
       <div class="mt-4">
         <h2 class="font-bold text-xl">Your Progress <span class="p-2 rounded-full bg-slate-400 text-black text-xs">10</span></h2>
       </div>
-      <div class="mt-4">
+      <div class="mt-4 md:flex md:gap-3">
+        <!-- lessons completed card -->
         <div class="rounded-lg p-3 slate-gray-50 md:w-64 shadow-lg">
             <div class="p-2">
               <h1 class=" font-bold"><span class="text-2xl">204/</span><span class="text-xl text-slate-400">300</span></h1>
               <h2 class="text-xs text-slate-400">completed Lessons</h2>
             </div>
             <div class="w-full mt-6 mb-6">
+              <span class="text-3xl font-bold">65%</span><br />
+              <span class="text-xs text-slate-400">completed</span><br />
+              <div class="w-full border border-gray-400 bg-white h-2 rounded-full">
+                <div class="bg-gray-400 w-1/2 h-full"></div>
+              </div>
+            </div>
+        </div>
+        <!-- overall ranking -->
+        <div class="rounded-lg p-3 slate-gray-50 md:w-64 shadow-lg">
+            <div class="p-2">
+              <h2  class="text-lg text-slate-900 py-4">You Rank at </h2>
+              <h1 class=" font-bold"><span class="text-2xl">135/</span><span class="text-xl text-slate-400">200</span></h1>
+              <h2 class="text-xs text-slate-400">other students</h2>
+            </div>
+            <div class="hidden w-full mt-6 mb-6">
               <span class="text-3xl font-bold">65%</span><br />
               <span class="text-xs text-slate-400">completed</span><br />
               <div class="w-full border border-gray-400 bg-white h-2 rounded-full">
@@ -60,6 +76,48 @@
           </div>
         </div>
       </div> 
+      <div class="pt-4 ">
+        <h2 class="font-bold text-xl">Community Ranking </h2>
+        <div class="overflow-x-scroll mt-8">
+          <table class="w-full gap-3 table">
+            
+            
+              <th class="text-lg pr-24">Student</th>
+              <th class="text-lg pr-24">Ranking</th>
+              <th class="text-lg pr-24">Courses</th>
+              <th class="text-lg pr-24">Hours</th>
+              <th class="text-lg pr-24">Score</th>
+  
+            
+              <tr v-for="student in 15" @key="student" class="h-16 pt-3 border-b">
+                  <td class="pr-24">
+                    <!-- student card -->
+                    <div class="flex gap-3">
+                      <img src="~/assets/ella.jpg" class="w-12 h-12 rounded-full" />
+                      <span class="font-bold text-sm">Issac Newton</span>
+                    </div>
+                  </td>
+                  <td class="pr-24">
+                    <!-- ranking card -->
+                    <span>{{student}}</span>
+                    <span>up</span>
+                  </td>
+                  <td class="pr-24">
+                    41
+                  </td>
+                  <td class="pr-24">
+                    30:40
+                  </td>
+                  <td class="pr-24">
+                    <span class="text-green-600 mr-3 text-xs">+65</span>
+                    <span>670</span>
+                  </td>
+              </tr>
+          
+          </table>
+        </div>
+      </div>
+      <profile />
     </div>
   </template>
   

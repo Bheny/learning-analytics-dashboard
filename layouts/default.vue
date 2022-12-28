@@ -90,7 +90,7 @@
     </header> 
 
     <!-- output the page content -->
-    <div class=" w-full pt-16">
+    <div class=" w-full pt-16 md:pt-10">
       <div class="lg:hidden to-bg-gray-100 bg-gray-900 text-gray-100 rounded-t-lg lg:bg-white fixed z-30 top-0 w-full">
         <div class="float-left inline w-1/2 p-2 ">
           <h2 class="text-gray-100 font-bold">Learning Analytics Dashboard</h2>
@@ -103,7 +103,7 @@
   </div>
   <!-- bottom menu bar displays only in mobile view  -->
   <div class="lg:hidden bg-gray-900 text-gray-100 rounded-t-lg lg:bg-white fixed z-30 bottom-0 w-full">
-    <ul class="inline flex p-3 w-full gap-auto">
+    <ul class="grid grid-cols-6 p-3 w-full gap-auto">
       <NuxtLink @click="activate('home')" to="/"><li :class="[ homeActive ? 'bg-white text-gray-900':'text-gray-100 bg-gray-900']" class=" rounded-lg p-3">
       <!-- home -->
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
